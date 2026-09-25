@@ -586,3 +586,385 @@ ol {
   border: 2px solid rgba(38, 50, 56, 1);
   cursor: pointer;
 }
+
+body {
+  animation: pageFadeIn 0.8s ease;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header-container {
+  animation: headerDown 0.8s ease;
+}
+
+@keyframes headerDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.headers-a {
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.headers-a:hover {
+  color: #546269;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-container {
+  animation: heroAppear 1s ease;
+}
+
+@keyframes heroAppear {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анімація заголовка */
+.h2-hero {
+  animation: titleAppear 1s ease 0.2s both;
+}
+
+@keyframes titleAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Текст */
+.txt-hero {
+  animation: textAppear 1s ease 0.4s both;
+}
+
+@keyframes textAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Кнопка Get Started */
+.btn-started {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.btn-started:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(38, 50, 56, 0.25);
+}
+
+/* Картинка героя */
+.img-girl {
+  animation: girlFloat 4s ease-in-out infinite;
+}
+
+@keyframes girlFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Лампочка */
+.img-light {
+  animation: lightRotate 3s ease-in-out infinite;
+}
+
+@keyframes lightRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skils-txt,
+.pricing-h2,
+.h2-contact {
+  animation: sectionTitle 0.8s ease;
+}
+
+@keyframes sectionTitle {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Картки Skills */
+.skils-content-item,
+.content-of-skils-list {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.skils-content-item:hover,
+.content-of-skils-list:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(38, 50, 56, 0.12);
+}
+
+/* Кнопки Learn more */
+.btn-skils {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.btn-skils:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(38, 50, 56, 0.2);
+}
+
+/* =========================
+   ABOUT US
+========================= */
+
+.us-container {
+  animation: aboutAppear 1s ease;
+}
+
+@keyframes aboutAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Числа */
+.theNumber {
+  transition: transform 0.3s ease;
+}
+
+.theNumber:hover {
+  transform: scale(1.08);
+}
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing-item {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.pricing-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(38, 50, 56, 0.15);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-container {
+  animation: contactAppear 1s ease;
+}
+
+@keyframes contactAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input */
+.input-contact {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.input-contact:focus {
+  outline: none;
+  border-color: #263238;
+  box-shadow: 0 0 0 4px rgba(38, 50, 56, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Subscribe */
+.btn-contact {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn-contact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(38, 50, 56, 0.2);
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+  animation: modalOpen 0.35s ease;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Close button */
+.close-button {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #263238;
+  transform: rotate(90deg);
+}
+
+/* Modal input */
+.modal-input {
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.modal-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(38, 50, 56, 0.1);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-container {
+  animation: footerAppear 1s ease;
+}
+
+@keyframes footerAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   EXTRA BUTTON EFFECT
+========================= */
+
+.btn-talk {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.btn-talk:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(38, 50, 56, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
